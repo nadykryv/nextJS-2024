@@ -6,7 +6,9 @@ const CommentPage = async ({params}: {params: Params}) => {
     const comment = await commentService.getCommentById( params.id);
     return (
         <div>
-            {comment?.id} : {comment?.body}
+            <hr/>
+            {JSON.stringify(comment)}
+            <hr/>
         </div>
     );
 };

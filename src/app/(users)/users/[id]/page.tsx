@@ -7,6 +7,9 @@ const UserPage = async ({params}: {params: Params}) => {
     return (
         <div>
             {user?.name} : {user?.email}
+            <hr/>
+            <hr/>
+            {JSON.stringify(user)}
         </div>
     );
 };

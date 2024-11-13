@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from "next/link";
+import NavLinkClientComponent from "@/components/nav-link-client-component/NavLinkClientComponent";
 import {styles} from "next/dist/client/components/react-dev-overlay/internal/components/Toast";
 
 const MenuComponent = () => {
@@ -7,17 +7,18 @@ const MenuComponent = () => {
         <div>
             <ul className={styles}>
                 <li>
-                    <Link href={"/"}>Home</Link>
+                    <NavLinkClientComponent path={'/'}>Home</NavLinkClientComponent>
                 </li>
                 <li>
-                    <Link href={"/users"}>users</Link>
+                    <NavLinkClientComponent path={'/users'}>users</NavLinkClientComponent>
                 </li>
                 <li>
-                    <Link href={"/posts"}>posts</Link>
+                    <NavLinkClientComponent path={'/posts'}>posts</NavLinkClientComponent>
                 </li>
                 <li>
-                    <Link href={"/comments"}>comments</Link>
+                    <NavLinkClientComponent path={'/comments'}>comments</NavLinkClientComponent>
                 </li>
+
             </ul>
             <hr/>
 

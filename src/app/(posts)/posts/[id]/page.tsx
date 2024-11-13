@@ -6,7 +6,9 @@ const PostPage = async ({params}: {params: Params}) => {
     const post = await postService.getPostById( params.id);
     return (
         <div>
-            {post?.id} : {post?.body}
+            <hr/>
+            {JSON.stringify(post)}
+            <hr/>
         </div>
     );
 };
