@@ -27,7 +27,7 @@ body {
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 15px;
 }
 
 a {
@@ -39,4 +39,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
 }
